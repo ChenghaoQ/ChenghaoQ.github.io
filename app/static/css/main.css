@@ -88,7 +88,7 @@ button
 
 #banner .inner .more
 {
-    margin-top:310px;
+    margin-top:280px;
 }
 
 .sub-heading
@@ -98,14 +98,16 @@ button
 }
 .logo
 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 900;
     letter-spacing: 1px;
+
 }
 .logo a
 {
     color:#fff;/*不能在.logo里面设置*/
-    padding:20px;
+    padding:22px;
+    text-decoration: none;
 }
 
 /*content*/
@@ -115,6 +117,10 @@ button
     height:2px;
     margin:20 auto;
     
+}
+#banner .inner .hr
+{
+    background:#fff;
 }
 h2
 {
@@ -302,4 +308,62 @@ ul.share-group
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    overflow:hidden;/*去掉滚动条*/
+}
+
+.back-to-top
+{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    border: 1px solid #111;
+    background:#222;
+    background:rgba(0,0,0,0.6);
+}
+
+
+.mask
+{
+        display:none;
+        position:fixed;
+        top: 0;
+        bottom:0;
+        left: 0;
+        right:0;
+        background: rgba(0,0,0,0.35);
+       
+}
+#sidebar
+{
+    /*display:none;/*隐藏*/
+    position:fixed;
+    top:0;
+    right:-300px; /*可以设置为-300*/
+    bottom:0;
+    width:300px;
+    background: #333;
+    color:#fff;
+    padding:20px 0;
+    transition: right,0.5s;
+    
+}
+
+#sidebar ul 
+{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+#sidebar ul a
+{
+    color:#fff;
+    text-decoration: none;
+    padding:10px 30px;
+    display:inline-block;
+    width:100%;
+}
+/*光标移动到上面会变色*/
+#sidebar ul a:hover /*选择器*/
+{
+    background:#444;
 }

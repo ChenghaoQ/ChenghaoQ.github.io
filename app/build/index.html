@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/static/css/main.css">
     
     <style>
         #div1
@@ -20,18 +20,21 @@
     <div class="main-wrapper">
     <header><!-- 页头开始-->
         <nav>
+            
             <div class="logo"><a href="#">老钱</a></div>
             <ul>
                 <li><a href='#' class="active">首页</a></li>
                 <li><a href='#'>链接2</a></li>
                 <li><a href='#'>链接3</a></li>
-                <li><a href='#'>链接4</a></li>
+                <li id='sidebar_trigger'><a href='#'>&#9776;</a></li>  <!--sidebar_trigger comes from main.js-->
             </ul>
         
         </nav>
         <div id="banner">
             <div class="inner">
+                <div class="hr"></div>
                 <h1>老钱</h1>
+                <div class="hr"></div>
                 <p class="sub-heading">人生的意义止于人生，有不做梦的，没有梦不醒的</p>
                 <button>了解我</button>
                 <div class="more">More</div>
@@ -161,14 +164,27 @@
     
     </footer><!-- 页脚结束-->
     </div>
+    
+    <!--sidebar shows,homepage goes dark--> 
+    <div class="mask"></div>
+    <!--独立的侧栏-->
+    <button class="back-to-top">返回顶部</button>
+    <div id="sidebar">
+        <ul>
+            <li><a href='#'>item</a></li>
+            <li><a href='#'>item</a></li>
+            <li><a href='#'>item</a></li>
+            <li><a href='#'>item</a></li>
+            <li><a href='#'>item</a></li>
+        
+        </ul>
+    
+    
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
     </body>
-
-
-
-
-
-
-
 
 
 </html>
