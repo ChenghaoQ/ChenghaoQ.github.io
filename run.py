@@ -1,6 +1,6 @@
-from app import app
-from flask_frozen import Freezer
-freezer = Freezer(app)
-if __name__=='__main__':
-   #     app.run(debug = True,port =9999)
-        freezer.freeze()
+import os
+from project import main
+
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
+    main.app.run(host='0.0.0.0', port=port)
