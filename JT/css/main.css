@@ -1,0 +1,207 @@
+.clearfix:after
+{
+    content:'';
+    display:block;
+    clear:both;
+}
+h2
+{
+    margin:0;
+    padding-top:3%;
+    padding-left:10%;
+    padding-bottom:1%;
+    font-size:35px;
+    height:10%;
+}
+.withline
+{
+    border-bottom: 3px solid black;
+}
+.wrapper
+{
+    max-width:100vw;
+    margin:0 auto;
+}
+body,html
+{
+    margin:0;
+    height:100%;
+
+}
+.main_page
+{
+    width:100%;
+
+}
+.main_page header nav
+{
+    
+    width:100%;
+    height:50px;
+    position:fixed;
+    background: black;
+    background: rgba(0,0,0,0.8);
+}
+.main_page header nav .logo
+{
+    padding-left:5%;
+    display: inline-block;
+}
+.main_page header nav .logo a
+{
+    
+    text-decoration: none;
+    color:#fff;
+    font-size:30px;
+    margin-top:10px;
+}
+.main_page header nav ul
+{
+    list-style:none;
+    margin:0;
+    float:right;
+}
+.main_page header nav ul li
+{
+    display:inline-block;
+    line-height:50px;
+    margin-right:20px;
+}
+.main_page header nav ul li a
+{
+    line-height:inherit;
+    text-decoration: none;
+    display:inline-block;
+    height:inherit;
+    color:#fff;
+}
+.main_page header nav ul li a:hover
+{
+    border-bottom: 5px solid white;
+}
+#banner
+{
+    top:0;
+    bottom:0;
+    width:100%;
+    height:100vh;
+    position:static;
+    background:#888;
+}
+#firm_pic
+{
+    margin-top:0;
+    width:100%;
+    height:100vh;
+    background:#e6a4a4 url(../img/banner.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+}
+#brief_intro
+{
+    width:100%;
+    height:100vh;
+    background:#ffc4c4;
+}
+.textcards
+{
+    float:left;
+    height:50vh;
+    width:50%;
+    background-color:#666;
+ 
+}
+.imgcards
+{
+    float:left;
+    height:50vh;
+    width:50%;
+    background-color:#333;
+}
+#products
+{
+    width:100%;
+    height:100vh;
+    background:#dbeba4;
+}
+
+#products h2
+{
+
+}
+#products .cards-group
+{
+    height:80vh;
+    width:60%;
+    margin-top:0;
+    margin-bottom:2%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#products .card
+{
+    float:left;
+    border:1px solid red;
+    height:30%;
+    width:31%;
+    
+
+}
+#products .card:first-child
+{
+        width:31%;
+}
+#products .card:nth-child(2)
+{    
+        margin-left:3%;
+        width:31%;
+}
+#products .card:nth-child(3)
+{
+        margin-left:3%;
+        width:31%;
+}
+#products .card:nth-child(4)
+{
+        margin-top:3%;
+        width:31%;
+}
+#products  .card:nth-child(5)
+{
+        margin-top:3%;
+        margin-left:3%;
+        width:65%;
+}
+#products .card:nth-child(6)
+{
+        margin-top:2.5%;
+        width:60%;
+}
+#products .card:nth-child(7)
+{
+        width:35%;
+        margin-left:3%;
+        margin-top:2.5%;
+}
+
+#activities
+{
+    width:100%;
+    height:100vh;
+    background:#a9babe;
+}
+#partners
+{
+    width:100%;
+    height:100vh;
+    background:#69efc6;
+    transition:0.8s;
+}
+#join_us
+{
+    width:100%;
+    height:100vh;
+    background:#a254ef;
+}
