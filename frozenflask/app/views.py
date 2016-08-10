@@ -9,7 +9,7 @@ from app import app,articles
 @app.route('/')
 def index():
 	return render_template('index.html')
-@app.route('/posts')
+@app.route('/posts.html')
 def posts():
 	#posts = [article for article in articles if 'date' in article.meta]
 	posts=[]
@@ -26,9 +26,9 @@ def posts():
 
 
 #where does path come from
-@app.route('/po/<path:path>/')
+@app.route('/<path:path>/')
 def page(path):
-	#path is the filename of a page, without the file extension
+	#path is the filename of a page,https://github.com/ChenghaoQ/ChenghaoQ.git without the file extension
 	#e.g."first-post
 	article = articles.get_or_404(path)
 	#page= article may have problem !!!!!1
